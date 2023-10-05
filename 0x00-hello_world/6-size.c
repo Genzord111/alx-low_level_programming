@@ -1,4 +1,11 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: 'Printing sizes of datatype memories'
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 printf("Size of a char: %ld byte(s)\n", sizeof(char));

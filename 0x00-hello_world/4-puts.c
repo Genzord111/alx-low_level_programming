@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'the program's description'
- * @parameter: describe the parameter
+ * Description: 'Using puts to print text'
  *
  * Return: Always 0 (Success)
  */
