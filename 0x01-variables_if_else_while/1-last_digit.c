@@ -4,17 +4,23 @@
 /**
  * main - Entry point
  *
- * Description: 'Code checks if number is positive, negative or zero'
+ * Description: 'Code checks last number againts conditions'
  *
- * Return: Always 1 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+int lastdigit;
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-int lastdigit =  abs(n) % 10;
+lastdigit =  n % 10;
+
+if (lastdigit < 0)
+{
+	lastdigit = -1 * lastdigit;
+}
 if (lastdigit > 5)
 {
 	printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit)
