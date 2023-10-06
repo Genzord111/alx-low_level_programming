@@ -1,4 +1,3 @@
-9.
 #include <stdio.h>
 /**
  * main - Entry point
