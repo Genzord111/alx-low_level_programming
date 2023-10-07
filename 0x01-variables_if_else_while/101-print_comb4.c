@@ -14,8 +14,6 @@ int end = 10;
 int i;
 int j;
 int k;
-int lower_counter = 3;
-int upper_counter = 10;
 for (i = start; i < end; i++)
 {
 	for (j = start; j < end; j++)
@@ -41,3 +39,4 @@ for (i = start; i < end; i++)
 }
 putchar('\n');
 return (0);
+}
