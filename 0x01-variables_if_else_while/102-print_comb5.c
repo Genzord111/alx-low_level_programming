@@ -15,10 +15,9 @@ int i;
 int j;
 int x;
 int y;
-int counter = 1;
 for (x = start; x < end; x++)
 {
-	for (x = start; x < end; x++)
+	for (y = start; y < end; y++)
 	{
 		putchar(x + '0');
 		putchar(y + '0');
