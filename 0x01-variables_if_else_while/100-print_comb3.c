@@ -25,7 +25,7 @@ for (i = start; i < end; i++)
 			if (!(i == 9 && j == 9))
 			{
 				putchar(',');
-
+			}
 		}
 	}
 }
