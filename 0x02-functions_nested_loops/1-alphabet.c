@@ -1,8 +1,6 @@
 #include "main.h"
-
 /**
- * print_alphabet - prints a-z 
- *
+ * print_alphabet - prints a to z
  * Return: void
  */
 void print_alphabet(void)
@@ -10,6 +8,7 @@ void print_alphabet(void)
 	char start = 'a';
 	char end = 'z';
 	int i;
+
 	for (i = start; i <= end; i++)
 	{
 		_putchar(i);
