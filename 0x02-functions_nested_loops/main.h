@@ -5,15 +5,9 @@
  * main - Entry point
  *
  * Description: 'Code checks if number is positive, negative or zero'
- *
+ * @char: is the accepted data type of the function
  * Return: Always 0 (Success)
  */
-/**
- * c - parameter for the _putchar function
- *
- * Description: 'Displays standard outputs like printf'
- *
- * Return: Always 0 (Success)
- */
-int _putchar(char c);
+
+int _putchar(char);
 #endif /* MAIN_H */
