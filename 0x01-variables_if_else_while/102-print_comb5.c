@@ -26,16 +26,11 @@ for (x = start; x < end; x++)
 		{
 			for (j = start; j < end; j++)
 			{
+				putchar(i + '0');
+				putchar(j + '0');
 				if (!(i == 9 && j == 9 && x == 9 && y == 8))
 				{
-					putchar(i + '0');
-					putchar(j + '0');
 					putchar(',');
-				}
-				else
-				{
-					putchar(i + '0');
-					putchar(j + '0');
 				}
 			}
 		}
