@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	long int i;
-	long int num2 = 2;
-	long int num1 = 1;
-	long int result;
+	long long int i;
+	long long int num2 = 2;
+	long long int num1 = 1;
+	long long int result;
 
 	printf("1, 2, ");
 	for (i = 1; i <= 96; i++)
