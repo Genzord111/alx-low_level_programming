@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * myresult - prints the result of a multiplication
- * @num1 - is first function parameter
- * @num2 - is second function parameter
+ * @num1: is first function parameter
+ * @num2: is second function parameter
  * Return: result
  */
 int myresult(int num1, int num2)

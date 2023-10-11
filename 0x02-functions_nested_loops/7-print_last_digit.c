@@ -1,0 +1,12 @@
+#include <stdio.h>
+/**
+ *  print_last_digit - outputs the last number of an input
+ * @num: the number to be specified
+ * Return: result
+ */
+
+int print_last_digit(int num)
+{
+	result = num % 10;
+	return (result);
+}
