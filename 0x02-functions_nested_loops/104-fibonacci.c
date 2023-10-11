@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 /**
 * main - Entry point
 * Description: 'Prints first 98 fibonacci numbers'
@@ -9,10 +8,10 @@
 
 int main(void)
 {
-	float i;
-	float num2 = 2;
-	float num1 = 1;
-	float result;
+	long int i;
+	long int num2 = 2;
+	long int num1 = 1;
+	long int result;
 
 	printf("1, 2, ");
 	for (i = 1; i <= 96; i++)
@@ -20,7 +19,7 @@ int main(void)
 		result = num2 + num1;
 		num1 = num2;
 		num2 = result;
-		printf("%f", round(result));
+		printf("%ld", result);
 		if (i < 96)
 		{
 			putchar(',');
