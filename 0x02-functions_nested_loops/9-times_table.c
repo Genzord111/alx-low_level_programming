@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- * times_table - finds the multipplication table for 0-9
  * myresult - prints the result of a multiplication
  * @i -function parameter
  * @j -function parameter
- * Return: void
+ * Return: result
  */
 int myresult(int i, int j)
 {
@@ -22,6 +21,11 @@ int myresult(int i, int j)
 	}
 	return (result);
 }
+/**
+ * times_table - finds the multipplication table for 0-9
+ * @void: no parameters needed
+ * Return: void
+ */
 void times_table(void)
 {
 	int i;
