@@ -13,12 +13,12 @@ int myresult(int i, int j)
 	result = j * i;
 	if (result <= 9)
 	{
-		_putchar(result + '0');
+		putchar(result + '0');
 	}
 	else
 	{
-		_putchar((result / 10) + '0');
-		_putchar((result % 10) + '0');
+		putchar((result / 10) + '0');
+		putchar((result % 10) + '0');
 	}
 	return (result);
 }
@@ -37,19 +37,19 @@ void times_table(void)
 				result = myresult(j, i);
 				if (j < 9 && result <= 9 && !(((j + 1) * i) / 10 > 0))
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					putchar(',');
+					putchar(' ');
+					putchar(' ');
 				}
 				else
 				{
-					_putchar(',');
-					_putchar(' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 			else
 				result = myresult(j, i);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
