@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
  * myresult - prints the result of a multiplication
- * @i -function parameter
- * @j -function parameter
+ * @num1 - is first function parameter
+ * @num2 - is second function parameter
  * Return: result
  */
-int myresult(int i, int j)
+int myresult(int num1, int num2)
 {
 	int result;
 
-	result = j * i;
+	result = num1 * num2;
 	if (result <= 9)
 	{
 		putchar(result + '0');
