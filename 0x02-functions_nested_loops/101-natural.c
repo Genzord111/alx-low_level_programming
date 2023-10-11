@@ -3,12 +3,12 @@
 * main - first entry point
 * Description: 'Prints sum of multiples of 3 and 5 below 1024'
 * @void: takes no parameter
-* Return: result
+* Return: returns 1 if (success)
 */
 
 int main(void)
 {
-	int num = 10;
+	int num = 1024;
 	int i;
 	int total = 0;
 
@@ -21,4 +21,5 @@ int main(void)
 	}
 	printf("%d", total);
 	putchar('\n');
+	return (1);
 }
