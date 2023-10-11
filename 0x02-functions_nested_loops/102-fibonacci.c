@@ -3,7 +3,7 @@
 * main - Entry point
 * Description: 'Prints first 50 fibonacci numbers'
 * @void: takes no parameters
-* Return: returns 1 (Success)
+* Return: returns 0 (Success)
 */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 	long int num1 = 1;
 	long int result;
 
-	printf("1 ,2, ");
+	printf("1, 2, ");
 	for (i = 1; i <= 48; i++)
 	{
 		result = num2 + num1;
@@ -27,5 +27,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return (1);
+	return (0);
 }

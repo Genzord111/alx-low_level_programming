@@ -41,35 +41,38 @@ void print_times_table(int n)
 	int j;
 	int result;
 
-	for (i = 0; i <= num; i++)
+	if (num > 15 || num < 0)
 	{
-		for (j = 0; j <= num; j++)
+		for (i = 0; i <= num; i++)
 		{
-			if (j < num)
+			for (j = 0; j <= num; j++)
 			{
-				result = myresult(j, i);
-				if (j < num && result <= 9 && !(((j + 1) * i) / 10 > 0))
+				if (j < num)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
-					putchar(' ');
-				}
-				else if (j < num && (result < 100) && !(((j + 1) * i) / 10 >= 10))
-				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
+					result = myresult(j, i);
+					if (j < num && result <= 9 && !(((j + 1) * i) / 10 > 0))
+					{
+						putchar(',');
+						putchar(' ');
+						putchar(' ');
+						putchar(' ');
+					}
+					else if (j < num && (result < 100) && !(((j + 1) * i) / 10 >= 10))
+					{
+						putchar(',');
+						putchar(' ');
+						putchar(' ');
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+					result = myresult(j, i);
 			}
-			else
-				result = myresult(j, i);
+			putchar('\n');
 		}
-		putchar('\n');
 	}
 }
