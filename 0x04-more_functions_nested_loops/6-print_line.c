@@ -2,6 +2,7 @@
 
 /**
 * print_line - draws a line
+* @n: is the number of lines to be drawn
 * Return: void
 */
 
