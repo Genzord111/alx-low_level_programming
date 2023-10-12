@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* more_numbers - draws a line
+* print_line - draws a line
 * Return: void
 */
 
