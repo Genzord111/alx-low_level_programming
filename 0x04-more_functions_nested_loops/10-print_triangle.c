@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* print_space - prints the space before the '#'
+* print_spaces - prints the space before the '#'
 * @end: integer that accounts for the spaces
 * Return: void
 */
 
-void print_space(int end)
+void print_spaces(int end)
 {
 	int j;
 
@@ -34,8 +34,8 @@ void print_hash(int start)
 }
 
 /**
-* print_diagonal - draws a right angle triangle
-* @n: integer that accounts for the height of diagonal
+* print_triangle - draws a right angle triangle
+* @size: integer that accounts for the height of diagonal
 * Return: void
 */
 void print_triangle(int size)
@@ -50,7 +50,7 @@ void print_triangle(int size)
 		{
 			if (size > 0)
 			{
-				print_space(n);
+				print_spaces(n);
 				n--;
 				print_hash(i);
 				_putchar('#');
