@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * print_space - prints the space before the '#'
 * @end: integer that accounts for the spaces
@@ -13,7 +13,7 @@ void print_space(int end)
 	{
 		for (j = 1; j < end; j++)
 		{
-			putchar(' ');
+			_putchar(' ');
 		}
 	}
 }
@@ -29,7 +29,7 @@ void print_hash(int start)
 
 	for (j = 1; j < start; j++)
 	{
-		putchar('#');
+		_putchar('#');
 	}
 }
 
@@ -53,11 +53,11 @@ void print_triangle(int size)
 				print_space(n);
 				n--;
 				print_hash(i);
-				putchar('#');
+				_putchar('#');
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 	else
-		putchar('\n');
+		_putchar('\n');
 }
