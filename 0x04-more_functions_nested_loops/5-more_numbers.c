@@ -18,10 +18,10 @@ void more_numbers(void)
 		{
 			first = i / 10;
 			sec = i % 10;
-			if ( i > 9)
-				putchar(first + '0');
-			putchar(sec + '0');
+			if (i > 9)
+				_putchar(first + '0');
+			_putchar(sec + '0');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
