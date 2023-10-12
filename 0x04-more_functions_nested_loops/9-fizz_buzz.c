@@ -38,4 +38,5 @@ int main(void)
 			printf("Buzz");
 	}
 	putchar('\n');
+	return (0);
 }
