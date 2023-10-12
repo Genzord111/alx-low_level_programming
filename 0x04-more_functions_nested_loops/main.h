@@ -9,3 +9,5 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_space(int end);
+void print_hash(int start);
+void print_triangle(int size)
