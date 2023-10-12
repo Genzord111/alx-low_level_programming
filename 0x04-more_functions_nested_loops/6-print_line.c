@@ -5,9 +5,8 @@
 * Return: void
 */
 
-void more_numbers(void)
+void print_line(int n)
 {
-	int n = 3;
 	int i;
 
 	for (i = 1; i <= n; i++)
