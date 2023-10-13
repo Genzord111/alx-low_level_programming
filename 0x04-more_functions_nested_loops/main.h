@@ -12,3 +12,4 @@ void print_space(int end);
 void print_spaces(int end);
 void print_hash(int start);
 void print_triangle(int size);
+void print_number(int n);
