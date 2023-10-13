@@ -9,7 +9,6 @@ int main(void)
 {
 	long long int i = 2;
 	long long int num = 612852475143;
-	long long int value = num;
 
 	while (num / i != 1)
 	{
