@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
 * main - Entry point for program
-* @void - takes no parameter
+* Description: 'Prints the largest prime factor of 612852475143'
+* @void: takes no parameter
 * Return: returns 0 if (SUCCESS)
 */
 int main(void)
