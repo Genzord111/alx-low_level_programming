@@ -7,8 +7,8 @@
 */
 int main(void)
 {
-	long long int i = 2;
-	long long int num = 612852475143;
+	long int i = 2;
+	long int num = 612852475143;
 
 	while (num / i != 1)
 	{
@@ -19,6 +19,6 @@ int main(void)
 		else
 			i++;
 	}
-	printf("%lld\n", num);
+	printf("%ld\n", num);
 	return (0);
 }
