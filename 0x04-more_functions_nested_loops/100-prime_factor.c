@@ -20,4 +20,5 @@ int main(void)
 			i++;
 	}
 	printf("%lld\n", num);
+	retuurn (0);
 }
