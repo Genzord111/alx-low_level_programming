@@ -8,8 +8,8 @@
 
 void _puts(char *str)
 {
-	int i;
-	char p3[100];
+	size_t i;
+	char p3[500];
 
 	strcpy(p3, str);
 	for (i = 0; i < strlen(p3); i++)
