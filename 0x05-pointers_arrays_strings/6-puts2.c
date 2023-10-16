@@ -1,4 +1,5 @@
 #include <string.h>
+#include "main.h"
 /**
 * puts2 - prints every other character
 * @str: is a pointer to an integer variable
