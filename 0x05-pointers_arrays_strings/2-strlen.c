@@ -7,7 +7,7 @@
 
 int _strlen(char *s)
 {
-	char p3[50];
+	char p3[500];
 
 	strcpy(p3, s);
 	return (strlen(p3));
