@@ -8,7 +8,7 @@
 
 void puts2(char *str)
 {
-	unsigned long int i;
+	size_t i;
 	char p3[100];
 
 	strcpy(p3, str);
