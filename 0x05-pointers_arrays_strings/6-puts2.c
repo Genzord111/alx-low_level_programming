@@ -9,7 +9,7 @@
 void puts2(char *str)
 {
 	size_t i;
-	char p3[300];
+	char p3[500];
 
 	strcpy(p3, str);
 	for (i = 0; i < strlen(p3); i++)
