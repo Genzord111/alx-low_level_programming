@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	size_t i;
+	int i;
 	char p3[500];
 
 	strcpy(p3, s);
