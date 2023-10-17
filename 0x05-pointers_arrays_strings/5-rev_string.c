@@ -15,7 +15,7 @@ void rev_string(char *s)
 
 	strcpy(p3, s);
 
-	for (i = (strlen(p3) - 1); i > 0; i--)
+	for (i = (strlen(p3) - 1); i >= 0; i--)
 	{
 		p2[j] = p3[i];
 		j++;
