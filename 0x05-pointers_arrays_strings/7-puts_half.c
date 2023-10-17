@@ -18,8 +18,10 @@ void puts_half(char *str)
     start = strlen(p3) / 2;
   }
   else
+  {
     start = (strlen(p3) -1) / 2;
-
+    start =start + 1;
+  }
   for (i = start; i < strlen(p3); i++)
   {
     _putchar(p3[i]);
