@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	size_t i;
 	size_t start;
-	char p3[100];
+	char p3[500];
 
 	strcpy(p3, str);
 	if (strlen(p3) % 2 == 0)
