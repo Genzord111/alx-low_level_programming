@@ -6,7 +6,7 @@
 * @dest: destination string parameter
 * @src: source string parameter
 * @n: number of characters of src to be appended
-* Return: void
+* Return: dest
 */
 
 char *_strncat(char *dest, char *src, int n)

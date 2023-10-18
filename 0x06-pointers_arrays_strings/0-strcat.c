@@ -5,7 +5,7 @@
 * _strcat - appends a string from a source to a destination
 * @dest: destination parameter
 * @src: source parameter
-* Return: void
+* Return: dest
 */
 
 char *_strcat(char *dest, char *src)
