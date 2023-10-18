@@ -13,16 +13,14 @@ char *_strncat(char *dest, char *src, int n)
 {
 	long int start;
 	long int j = 0;
-	char *p;
 	int added_space;
 
-	if (n < strlen(dest))
+	if (n < (int)strlen(dest))
 	{
 		added_space = strlen(dest) + n;
 	}
 	else
 		added_space = (strlen(dest)) + (strlen(src));
-	p = dest;
 
 	for (start = (strlen(dest)); start < added_space; start++)
 	{

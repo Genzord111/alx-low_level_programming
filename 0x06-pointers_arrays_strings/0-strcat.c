@@ -13,9 +13,6 @@ char *_strcat(char *dest, char *src)
 	long int start;
 	long int j = 0;
 	long int added_space = strlen(src) + strlen(dest);
-	char *p;
-
-	p = dest;
 
 	for (start = (strlen(dest)); start < added_space; start++)
 	{
