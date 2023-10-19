@@ -39,6 +39,7 @@ int check(char str)
 		case ';':
 			return (0);
 	}
+	return (1);
 }
 
 /**
