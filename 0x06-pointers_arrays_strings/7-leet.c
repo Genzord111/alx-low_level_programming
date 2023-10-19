@@ -31,8 +31,6 @@ char *leet(char *str)
 			{
 				str[k] = j;
 			}
-			else
-				str[k] = str[k];
 		}
 		k = 0;
 	}
