@@ -13,14 +13,14 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		putchar(45);
+		_putchar(45);
 		num = -num;
 	}
 	if ((num / 10) != 0)
 	{
 		print_number(num / 10);
 	}
-	putchar((num % 10) + '0');
+	_putchar((num % 10) + '0');
 }
 
 /**
@@ -44,8 +44,8 @@ void print_diagsums(int *a, int size)
 		i += n;
 	}
 	print_number(first);
-	putchar(',');
-	putchar(' ');
+	_putchar(',');
+	_putchar(' ');
 
 	for (k = x; k < (size * size) - 1;)
 	{
@@ -53,5 +53,5 @@ void print_diagsums(int *a, int size)
 		k += x;
 	}
 	print_number(sec);
-	putchar('\n');
+	_putchar('\n');
 }
