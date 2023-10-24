@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
 * _strchr - counts the number of char in f present in a prefix of s
