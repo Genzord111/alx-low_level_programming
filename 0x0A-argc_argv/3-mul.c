@@ -14,8 +14,7 @@ int check(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if ((int)str[i] >= 30 && (int)str[i] <= 39)
-			num = (num * 10) + (str[i] - 48);
+		num = (num * 10) + (str[i] - 48);
 	}
 	return (num);
 }
