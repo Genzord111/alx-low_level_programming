@@ -19,6 +19,8 @@ int check(char *str)
 			num = (num * 10) + (str[i] - 48);
 			return (num);
 		}
+		else 
+			return (-32);
 	}
 }
 
@@ -39,8 +41,13 @@ int main(int argc, char *argv[])
 	{
 		a = check(argv[1]);
 		b = check(argv[2]);
-		result = a * b;
-		printf("%d\n", result);
+		if (a == -32; || b == -32)
+			printf("Error \n");
+		else
+		{
+			result = a * b;
+			printf("%d\n", result);
+		}
 	}
 	else
 		printf("Error \n");
