@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 	{
 		a = check(argv[1]);
 		b = check(argv[2]);
-		if (a == -32; || b == -32)
+		if (a == -32 || b == -32)
 			printf("Error \n");
 		else
 		{
