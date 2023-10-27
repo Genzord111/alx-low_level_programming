@@ -17,11 +17,12 @@ int check(char *str)
 		if (str[i] >= '0' && str[i] <= '9')
 		{
 			num = (num * 10) + (str[i] - 48);
-			return (num);
 		}
-		else 
+		else
 			return (-32);
 	}
+	return (num);
+
 }
 
 /**
@@ -41,6 +42,7 @@ int main(int argc, char *argv[])
 	{
 		a = check(argv[1]);
 		b = check(argv[2]);
+
 		if (a == -32 || b == -32)
 			printf("Error \n");
 		else
