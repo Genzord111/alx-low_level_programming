@@ -17,4 +17,6 @@ int main(int argc, char *argv[])
 		printf("%s", (argv[i]));
 		putchar('\n');
 	}
+
+	return (0);
 }

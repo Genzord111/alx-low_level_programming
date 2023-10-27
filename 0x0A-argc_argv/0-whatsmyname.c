@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include "string.h"
 
 /**
  * main - check the code
@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int i;
+
+	(void)argc;
 
 	for (i = 0; i < (int)strlen(argv[0]); i++)
 		putchar(argv[0][i]);

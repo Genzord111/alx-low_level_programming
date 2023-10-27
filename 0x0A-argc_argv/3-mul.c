@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-* check - cchanges string to integer
-* @str: pointer to string to be changed
-* Return: integer
+/**
+ ** check - changes string to integer
+ * @str: pointer to string to be changed
+ * Return: integer
 */
 
 int check(char *str)
 {
-int num = 0;
+	int num = 0;
+	int i;
 
-for (int i = 0; str[i] != '\0'; i++)
-{
-if ((int)str[i] >= 30 && (int)str[i] >= 30)
-num = (num * 10) + (str[i] - 48);
-}
-return num;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if ((int)str[i] >= 30 && (int)str[i] >= 30)
+			num = (num * 10) + (str[i] - 48);
+	}
+	return (num);
 }
 
 /**
@@ -26,11 +27,10 @@ return num;
  * Return: Always 0.
  */
 
-int main( int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 	int b;
-	int i;
 	int result;
 
 	if (argc == 3)
@@ -38,8 +38,9 @@ int main( int argc, char *argv[])
 		a = check(argv[1]);
 		b = check(argv[2]);
 		result = a * b;
-		printf("%d\n",result);
+		printf("%d\n", result);
 	}
 	else
 		printf("Error");
+	return (0);
 }
