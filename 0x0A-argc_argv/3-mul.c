@@ -10,9 +10,17 @@
 int check(char *str)
 {
 	int num = 0;
-	int i;
+	int i = 0;
+	int sign = 1;
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (str[0] == '-')
+	{
+		sign = -1;
+		i = 1;
+	}
+
+
+	for (; str[i] != '\0'; i++)
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 		{
@@ -21,7 +29,7 @@ int check(char *str)
 		else
 			return (-32);
 	}
-	return (num);
+	return (num * sign);
 
 }
 
@@ -54,7 +62,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error \n");
-		return (1);
 	}
+
 	return (0);
 }
