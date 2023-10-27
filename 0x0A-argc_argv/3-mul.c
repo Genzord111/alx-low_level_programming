@@ -14,9 +14,12 @@ int check(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		num = (num * 10) + (str[i] - 48);
+		if (str[i] >= '0' && str[i] <= '9')
+		{
+			num = (num * 10) + (str[i] - 48);
+			return (num);
+		}
 	}
-	return (num);
 }
 
 /**
@@ -40,6 +43,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", result);
 	}
 	else
-		printf("Error");
+		printf("Error \n");
 	return (0);
 }
