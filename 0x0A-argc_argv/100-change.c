@@ -38,22 +38,19 @@ int main(int argc, char *argv[])
 	int k = 0;
 	int num;
 
-	if (argc == 2)
-	{
-		amount = atoi(argv[1]);
-		if (amount < 0)
-			printf("0 \n");
-		else
-		{
-			num = convert(amount, 0, k);
-			printf("%d \n", num);
-		}
-	}
-
-	else
+	if (argc != 2)
 	{
 		printf("Error \n");
 		return (1);
+	}
+
+	amount = atoi(argv[1]);
+	if (amount < 0)
+		printf("0 \n");
+	else
+	{
+		num = convert(amount, 0, k);
+		printf("%d \n", num);
 	}
 
 	return (0);
