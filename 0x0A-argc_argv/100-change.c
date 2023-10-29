@@ -54,20 +54,20 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		if ((amount - 10) >= 0)
-                {
-                        amount -= 10;
-                        continue;
-                }
+		{
+			amount -= 10;
+			continue;
+		}
 		if ((amount - 5) >= 0)
-                {
-                        amount -= 5;
-                        continue;
-                }
+		{
+			amount -= 5;
+			continue;
+		}
 		if ((amount - 2) >= 0)
-                {
-                        amount -= 25;
-                        continue;
-                }
+		{
+			amount -= 2;
+			continue;
+		}
 		amount--;
 	}
 	printf("%d\n", coins);
