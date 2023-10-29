@@ -35,8 +35,7 @@ int convert(int amount, int num, int k)
 int main(int argc, char *argv[])
 {
 	int amount;
-	int k = 0;
-	int num;
+	int coins = 0;
 
 	if (argc != 2)
 	{
@@ -45,13 +44,33 @@ int main(int argc, char *argv[])
 	}
 
 	amount = atoi(argv[1]);
-	if (amount < 0)
-		printf("0 \n");
-	else
+
+	while (amount > 0)
 	{
-		num = convert(amount, 0, k);
-		printf("%d \n", num);
+		coins++;
+		if ((amount - 25) >= 0)
+		{
+			amount -= 25;
+			continue;
+		}
+		if ((amount - 10) >= 0)
+                {
+                        amount -= 10;
+                        continue;
+                }
+		if ((amount - 5) >= 0)
+                {
+                        amount -= 5;
+                        continue;
+                }
+		if ((amount - 2) >= 0)
+                {
+                        amount -= 25;
+                        continue;
+                }
+		amount--;
 	}
+	printf("%d\n", coins);
 
 	return (0);
 }
