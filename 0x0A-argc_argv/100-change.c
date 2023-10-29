@@ -41,8 +41,13 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		amount = atoi(argv[1]);
-		num = convert(amount, 0, k);
-		printf("%d \n", num);
+		if (amount < 0)
+			printf("0 \n");
+		else
+		{
+			num = convert(amount, 0, k);
+			printf("%d \n", num);
+		}
 	}
 
 	else
