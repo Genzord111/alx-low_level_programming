@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  ** check - changes string to integer
@@ -27,7 +28,7 @@ int check(char *str)
 			num = (num * 10) + (str[i] - 48);
 		}
 		else
-			return (-32);
+			return (INT_MIN);
 	}
 	return (num * sign);
 
@@ -51,7 +52,7 @@ int main(int argc, char *argv[])
 		a = check(argv[1]);
 		b = check(argv[2]);
 
-		if (a == -32 || b == -32)
+		if (a == INT_MIN || b == INT_MIN)
 			printf("Error \n");
 		else
 		{
@@ -62,6 +63,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error \n");
+		return (1);
 	}
 
 	return (0);
