@@ -10,10 +10,15 @@
 
 char *_strdup(char *str)
 {
-	char *new; 
+	char *new;
 	
+	if (str == "")
+	{
+		_putchar('');
+		_putchar('\n');
+	}
 	if (str == NULL)
-		return (NULL);	
+		return (NULL);
 	
 	new = (char *)malloc((strlen(str) * sizeof(char)) - 1);
 	
