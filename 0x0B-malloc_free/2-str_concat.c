@@ -17,8 +17,21 @@ char *str_concat(char *s1, char *s2)
 
 	if (p == NULL)
 		return (NULL);
-	strcpy(p, s1);
-	strcat(p, s2);
+
+	if (s1 == NULL && (s2 == NULL)
+	{
+		strcpy(p, " ");
+	}
+	if (s1 == NULL)
+	{
+		strcpy(p, " ");
+		strcat(p, s2);
+	}
+	if (s2 == NULL)
+	{
+		strcpy(p, s1);
+		strcat(p, " ");
+	}
 
 	return (p);
 }
