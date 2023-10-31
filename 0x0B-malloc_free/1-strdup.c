@@ -12,12 +12,7 @@ char *_strdup(char *str)
 {
 	char *new;
 	
-	if (str == "")
-	{
-		_putchar('');
-		_putchar('\n');
-	}
-	if (str == NULL)
+	if (str == NULL && str != " ")
 		return (NULL);
 	
 	new = (char *)malloc((strlen(str) * sizeof(char)) - 1);
