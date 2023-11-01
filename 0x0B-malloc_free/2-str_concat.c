@@ -12,13 +12,14 @@
 char *str_concat(char *s1, char *s2)
 {
 
-	unsigned int size = strlen(s1) + strlen(s2);
+	unsigned int size = strlen(s1) + strlen(s2) + 1;
 	char *p = (char *)malloc(size * sizeof(char));
 
 	if (p == NULL)
 		return (NULL);
+	
 	strcpy(p, s1);
 	strcat(p, s2);
-
+	
 	return (p);
 }
