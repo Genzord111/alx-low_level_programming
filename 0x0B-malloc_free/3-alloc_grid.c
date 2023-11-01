@@ -31,9 +31,9 @@ int **alloc_grid(int width, int height)
 	{
 		for (int j = 0; j < i; j++) 
 		{
-			free(grid[j]);
+			free(matix[j]);
 		}
-		free(grid);
+		free(matrix);
 		return NULL;
 	}
 
