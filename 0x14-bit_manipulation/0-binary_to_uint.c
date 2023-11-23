@@ -15,6 +15,9 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int i;
 
 	str = (char *)malloc(strlen(b));
+	if (b == NULL)
+		return (0);
+
 	if (str == NULL)
 		return (0);
 
