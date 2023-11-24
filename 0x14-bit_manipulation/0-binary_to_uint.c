@@ -10,32 +10,25 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	char *str;
-	unsigned int value;
+	unsigned int value = 0;
 	unsigned int i;
 
-	str = (char *)malloc(strlen(b));
 	if (b == NULL)
 		return (0);
-
-	if (str == NULL)
-		return (0);
-
-	strcpy(str, b);
-	for (i = 0; i < strlen(str); i++)
+	
+	for (i = 0; i < strlen(b); i++)
 	{
-		if (str[i] == '0')
+		if (b[i] == '0')
 		{
-			value += (0 << (strlen(str) - i - 1));
+			value += (0 << (strlen(b) - i - 1));
 		}
-		else if (str[i] == '1')
+		else if (str[b] == '1')
 		{
-			value += (1 << (strlen(str) - i - 1));
+			value += (1 << (strlen(b) - i - 1));
 		}
 		else
 			return (0);
 	}
-
-	free(str);
+	
 	return (value);
 }
