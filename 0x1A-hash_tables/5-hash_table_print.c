@@ -13,9 +13,9 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *current;
 	unsigned long int i;
 	unsigned long int size = ht->size;
-	int count = 1;
+	int first_data = 1;
 
-	if (ht == NULL)
+	if (ht == NULL || ht->array == NULL)
 		return;
 
 	printf("{");
@@ -25,10 +25,10 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (current != NULL)
 		{
-			if (count != 1)
+			if (first_data != 1)
 				printf(", ");
 			printf("'%s': '%s'", current->key, current->value);
-			count++;
+			first_data = 0;
 			current = current->next;
 		}
 	}
